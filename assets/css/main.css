@@ -19,28 +19,27 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #fff8f4; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #3b4a49; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0cf89a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #2c1810; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ff6b35; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #e100ff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #7700ff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #ff8c42;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ff6b35; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #e100ff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #7700ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f6fafd;
+  --background-color: #fff8f4;
   --surface-color: #ffffff;
 }
 
@@ -401,7 +400,10 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+
 }
+
+
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
@@ -832,7 +834,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -2043,4 +2045,23 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* Custom CSS for Team Section Carousel */
+.team .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.team .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.team .team-member {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team .team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
