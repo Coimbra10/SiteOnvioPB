@@ -19,18 +19,18 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #fff8f4; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2c1810; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff6b35; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #233E35; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #233E35; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #233E35; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ff8c42;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ff6b35; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #bdbdbd; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
 
@@ -39,7 +39,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #fff8f4;
+  --background-color: #ffffff;
   --surface-color: #ffffff;
 }
 
@@ -56,7 +56,7 @@
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
-  --surface-color: #df4646;
+  --surface-color: #ffffff;
   --contrast-color: #ffffff;
 }
 
@@ -231,7 +231,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #325662;
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -243,7 +243,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 70px;
   margin-right: 8px;
 }
 
@@ -251,7 +251,7 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 300;
-  color: var(--heading-color);
+  color: #ffffff;
 }
 
 .header .btn-getstarted,
@@ -834,7 +834,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1672,7 +1672,7 @@ section,
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #818181;
 }
 
 .faq .faq-container .faq-item .faq-content {
