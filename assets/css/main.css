@@ -297,6 +297,12 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+.header small {
+  color: var(--contrast-color);
+  font-size: 10px;
+  font-weight: 400;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
